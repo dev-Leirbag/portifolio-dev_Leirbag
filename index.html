@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Portfólio | Gabriel Alves Ferreira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #2563eb;
+        --bg: #f9fafb;
+        --text: #1f2937;
+        --card: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--text);
+      }
+      body {
+        background: var(--bg);
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1.5rem;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+      }
+      header h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+      .contact a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 0.9rem;
+        word-break: break-all;
+      }
+      .contact a i {
+        margin-right: 0.4rem;
+        color: var(--primary);
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      section h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: var(--primary);
+      }
+      .card {
+        background: var(--card);
+        padding: 1rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      ul {
+        list-style: disc inside;
+      }
+      hr {
+        border: none;
+        border-top: 1px solid #e5e7eb;
+      }
+      @media (min-width: 640px) {
+        header {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Gabriel Alves Ferreira</h1>
+          <div class="contact">
+            <a href="mailto:gabrielalves.negocios@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+              >gabrielalves.negocios@gmail.com</a
+            >
+            <a href="tel:+5511958312148"
+              ><i class="fa-solid fa-phone"></i>(11) 95831-2148</a
+            >
+            <a><i class="fa-solid fa-location-dot"></i>São Paulo, SP</a>
+            <a href="https://github.com/dev-Leirbag" target="_blank"
+              ><i class="fa-brands fa-github"></i>github.com/dev-Leirbag</a
+            >
+            <a
+              href="https://www.linkedin.com/in/gabriel-alves-profile/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+              >linkedin.com/in/gabriel-alves-profile</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section id="resumo">
+        <h2>Resumo Profissional</h2>
+        <p class="card">
+          Desenvolvedor Backend Java com experiência prática no uso de Spring e
+          desenvolvimento de aplicações Java. Atuo como freelancer, criando e
+          mantendo sistemas web e APIs REST usando Spring Boot. Tenho
+          conhecimento em bancos de dados relacionais e não relacionais, testes
+          unitários, Docker e integração contínua (CI/CD). Minhas entregas
+          incluem desde a modelagem de banco até o deploy com Docker, passando
+          por autenticação com JWT, documentação com Swagger e testes
+          automatizados com JUnit e Mockito. Busco constantemente evoluir como
+          desenvolvedor e aplicar boas práticas de arquitetura, performance e
+          segurança.
+        </p>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <div class="card">
+          <ul>
+            <li>
+              <strong>Java:</strong> Spring Boot, Spring Security,
+              JPA/Hibernate.
+            </li>
+            <li>
+              <strong>Bancos de Dados:</strong> PostgreSQL, MySQL, MongoDB.
+            </li>
+            <li>
+              <strong>APIs REST:</strong> Desenvolvimento, autenticação com JWT,
+              documentação com Swagger.
+            </li>
+            <li><strong>Testes:</strong> JUnit, Mockito.</li>
+            <li>
+              <strong>DevOps:</strong> Docker, Docker Compose, CI/CD com GitHub
+              Actions, Feign Client.
+            </li>
+            <li><strong>Metodologias Ágeis:</strong> Scrum, Kanban.</li>
+            <li>
+              <strong>Outras Tecnologias:</strong> Git, GitHub, JavaScript,
+              TypeScript, HTML, CSS, React.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <div class="card">
+          <h3>
+            Desenvolvedor Freelancer
+            <span>· Autônomo · Fev 2025 – Presente</span>
+          </h3>
+          <ul>
+            <li>
+              Desenvolvi APIs REST com Spring Boot, implementando autenticação
+              JWT e integração com bancos de dados.
+            </li>
+            <li>
+              Modelei e otimizei bancos de dados PostgreSQL e MongoDB para
+              melhor desempenho das aplicações.
+            </li>
+            <li>
+              Configurei containers Docker para ambientes de desenvolvimento e
+              produção.
+            </li>
+            <li>
+              Escrevi testes unitários e de integração com JUnit e Mockito,
+              garantindo a qualidade do código.
+            </li>
+            <li>
+              Participei ativamente da revisão de código e do uso de boas
+              práticas de desenvolvimento.
+            </li>
+          </ul>
+          <hr style="margin: 1rem 0" />
+          <h3>
+            Assistente Administrativo
+            <span
+              >· Zenatur Transporte de Carga LTDA · Fev 2023 – Jan 2025</span
+            >
+          </h3>
+          <ul>
+            <li>
+              Envio de e-mails diários, montagem de indicadores e dashboards em
+              Excel.
+            </li>
+            <li>Análise e ajustes de inventários de estoque em sistema WMS.</li>
+            <li>
+              Tratativas com a Coordenação de Sucesso do Cliente e reuniões
+              presenciais.
+            </li>
+            <li>
+              Responsável pela transferência total do estoque entre galpões.
+            </li>
+          </ul>
+          <hr style="margin: 1rem 0" />
+          <h3>
+            Auxiliar Operacional de Gestão de Estoque
+            <span
+              >· Zenatur Transporte de Carga LTDA · Mai 2022 – Fev 2023</span
+            >
+          </h3>
+          <ul>
+            <li>
+              Inventários diários, semanais, mensais e anuais de diversos
+              clientes.
+            </li>
+            <li>
+              Busca de itens, transferência de códigos e movimentações via WMS.
+            </li>
+            <li>Otimização e organização do estoque.</li>
+          </ul>
+          <hr style="margin: 1rem 0" />
+          <h3>
+            Jovem Aprendiz
+            <span
+              >· Zenatur Transporte de Carga LTDA · Out 2021 – Mai 2022</span
+            >
+          </h3>
+          <ul>
+            <li>
+              Atuação no setor de Gestão de Estoque realizando inventários e
+              movimentações sistêmicas.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <h2>Projetos Pessoais</h2>
+        <div class="card">
+          <h3>API de Gestão de Usuários e Agendamento de Tarefas</h3>
+          <p>
+            API REST para gerenciamento de usuários com autenticação JWT e banco
+            PostgreSQL. Desenvolvida com Spring Boot, Spring Security, JPA e
+            Docker.
+          </p>
+        </div>
+      </section>
+
+      <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        <div class="card">
+          <p>
+            <strong>Análise e Desenvolvimento de Sistemas</strong><br />
+            Universidade Metodista de São Paulo – UMESP (2025 – 2027)
+            <em>[Cursando]</em>
+          </p>
+        </div>
+      </section>
+
+      <section id="certificacoes">
+        <h2>Certificações</h2>
+        <div class="card">
+          <ul>
+            <li>
+              <a
+                href="https://hotmart.com/pt-br/club/product/4993314/certificate/b8a45701-801a-43ae-a1e6-929eb687fd7f-264128909/validate"
+                target="_blank"
+                >Front-End em React – Comunidade Ada (Cursando)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://hermes.dio.me/certificates/LEHLVWFV.pdf"
+                target="_blank"
+                >Desenvolvimento Java com IA – Bootcamp DIO (Cursando)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://javanauta.blob.core.windows.net/certificado/447c116d1776b5120ee5245ba55d6c415a26ba9cfd65e10028f319ea70e9f7a3-banco_dados-portugues.png"
+                target="_blank"
+                >Banco de Dados SQL e NoSQL – Javanauta (Mai 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://javanauta.blob.core.windows.net/certificado/447c116d1776b5120ee5245ba55d6c415a26ba9cfd65e10028f319ea70e9f7a3-metodologias_ageis-portugues.png"
+                target="_blank"
+                >Metodologias Ágeis – Javanauta (Mai 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1vPbsA01ZxBWoIcZPlFj0ktLK4hrpd9qF/view?usp=sharing"
+                target="_blank"
+                >Versionamento de Código com Git e GitHub – Bootcamp DIO (Mai
+                2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1xHOfH-_LbktzeaXXU0NMxt-xKW-8zFm8/view?usp=sharing"
+                target="_blank"
+                >Java POO – Curso em Vídeo (Abr 2025 – Mai 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1-uq6RDknfwhSkZ5SGUHTv31IjKrVsoUo/view?usp=sharing"
+                target="_blank"
+                >Java – Curso em Vídeo (Mar 2025 – Abr 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://app.xperiun.com/certificado/li38zqjh62oalo47jpvd"
+                target="_blank"
+                >Lógica de Programação – Curso em Vídeo (Fev 2025 – Mar 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://app.xperiun.com/certificado/ewtlm5tvniel3hjqv3wbergmp"
+                target="_blank"
+                >Power BI, Power Query e Análise de Dados – Xperiun (Jan 2025 –
+                Fev 2025)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://app.xperiun.com/certificado/lp9epcfmdg75isi2fhy88xa2x"
+                target="_blank"
+                >Excel Intermediário – Hashtag Treinamentos (Abr 2024 – Out
+                2024)</a
+              >
+            </li>
+            <li>Pacote Office – Hashtag Treinamentos (Abr 2024 – Out 2024)</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer style="text-align: center; font-size: 0.8rem; margin-top: 2rem">
+        © 2025 Gabriel Alves Ferreira · Todos os direitos reservados
+      </footer>
+    </div>
+  </body>
+</html>
